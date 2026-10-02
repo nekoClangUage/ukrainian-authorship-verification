@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+content/
+*.pth
+*.egg-info/
+experiments/training_report.xml
+experiments/vocab_cache.json
+experiments/training_result.png

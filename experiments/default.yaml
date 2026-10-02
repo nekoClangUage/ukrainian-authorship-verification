@@ -1,0 +1,30 @@
+seed: 2026
+
+model:
+  embed_dim: 256
+  hidden_dim: 384
+  classifier_h1: 512
+  classifier_h2: 256
+  dropout: 0.35
+  embed_dropout: 0.2
+
+training:
+  lr: 0.0003
+  epochs: 3
+  batch_size: 32
+  scheduler_factor: 0.5
+  scheduler_patience: 3
+  scheduler_min_lr: 0.000001
+  grad_clip_max_norm: 1.0
+  weight_decay: 0.0001
+
+data:
+  max_seq_len: 1000
+  min_freq: 2
+  train_samples_per_author: 250
+  val_samples_per_author: 150
+  vocab_force_rebuild: false
+  divider_target_count: 300
+
+inference:
+  threshold: 0.65
